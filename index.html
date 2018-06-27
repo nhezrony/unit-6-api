@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to the giphy Adventures</h1>
+            <p class="lead">Chose any category you would like from the list below. Feel free to use your imagination and add categories.
+                <br>*Note categories are not limited to “categories” they can actually be things or names.
+            </p>
+            <hr class="my-4">
+            <p>Custom controls, enter the category and the amount of images you would like (default is 5).</p>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button id="addCat" class="btn btn-outline-secondary" type="button">Add Category</button>
+                </div>
+                <input id="addCatTxt" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button id="imgQty" class="btn btn-outline-secondary" type="button">Number of Images</button>
+                </div>
+                <input id="imgQtyTxt" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+            <button type="button" id="resetBtn" class="btn btn-primary
+            ">Remove all Current Categories</button>
+        </div>
+
+        <div class="row mx-auto">
+            <div class="col col-md-12 catBtns">
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Miami Heat">Miami Heat</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="LA Clippers">LA Clippers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Brooklyn Nets">Brooklyn Nets</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="LA Lakers">LA Lakers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Detroit Pistons">Detroit Pistons</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="New Orleans Pelicans">New Orleans Pelicans</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Dallas Mavericks">Dallas Mavericks</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Denver Nuggets">Denver Nuggets</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Boston Celtics">Boston Celtics</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Portland Trail Blazers">Portland Trail Blazers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="New York Knicks">New York Knicks</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="San Antonio Spurs">San Antonio Spurs</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="MIN Timberwolves">MIN Timberwolves</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Houston Rockets">Houston Rockets</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Golden State Warriors">Golden State Warriors</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="OKC Thunder">OKC Thunder</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Toronto Raptors">Toronto Raptors</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Indiana Pacers">Indiana Pacers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Phoenix Suns">Phoenix Suns</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Philadelphia 76ers">Philadelphia 76ers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Washington Wizards">Washington Wizards</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Milwaukee Bucks">Milwaukee Bucks</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Utah Jazz">Utah Jazz</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Charlotte Hornets">Charlotte Hornets</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Cleveland Cavaliers">Cleveland Cavaliers</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Sacramento Kings">Sacramento Kings</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Orlando Magic">Orlando Magic</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Atlanta Hawks">Atlanta Hawks</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Memphis Grizzlies">Memphis Grizzlies</button>
+                <button type="button" class="btn btn-primary btn-lg catBtn m-3" value="Chicago Bulls">Chicago Bulls</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
