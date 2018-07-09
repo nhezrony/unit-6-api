@@ -46,7 +46,7 @@ var imgQty = 5;
 function getImages(searchStr, imgQty) {
     $('body').html('');
     var queryURL =
-        `http://api.giphy.com/v1/gifs/search?q=${searchStr}&api_key=ftLUZhl2anOyuYerdNiwMRgychZUjQ0a&limit=${imgQty}`;
+        `https://api.giphy.com/v1/gifs/search?q=${searchStr}&api_key=ftLUZhl2anOyuYerdNiwMRgychZUjQ0a&limit=${imgQty}`;
 
     $.ajax({
         url: queryURL,
